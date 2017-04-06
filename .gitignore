@@ -15,3 +15,6 @@ TestResult.xml
 .vs/config/applicationhost.config
 packages/
 *.dat
+=======
+# Add any directories, files, or patterns you don't want to be tracked by version control
+
