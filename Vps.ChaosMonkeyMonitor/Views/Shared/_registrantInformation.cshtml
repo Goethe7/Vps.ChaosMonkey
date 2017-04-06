@@ -1,0 +1,105 @@
+﻿@using System.Reflection
+@using Vps.Monkey.Common.Enums
+@model List<Vps.ChaosMonkeyMonitor.ViewModels.ChaosMonitorData>
+
+<table class="table" id="monitorTable">
+    <tr class="monitor-table-header registrant-colour1">
+        <th>Host</th>
+        <th>Service Description</th>
+        <th>Service</th>
+        <th>Type</th>
+        <th>Date Registered</th>
+        <th>Action</th>
+    </tr>
+
+    @{
+        var registrants = Model.OrderBy(x => x.ServiceStatus);
+    }
+
+    @foreach (var item in registrants)
+    {
+        string serviceClass;
+
+        var hostClass = "registrantLabel service-running";
+
+        if (!item.HostReachable)
+        {
+            hostClass = "registrantLabel service-starting";
+        }
+
+        switch (item.ServiceStatus)
+        {
+            case ServiceHostStatus.Running:
+            case ServiceHostStatus.Started:
+                serviceClass = "registrantLabel service-running";
+                break;
+            case ServiceHostStatus.Starting:
+                serviceClass = "registrantLabel service-starting";
+                break;
+            case ServiceHostStatus.Stopped:
+                serviceClass = "registrantLabel service-stopped";
+                break;
+            case ServiceHostStatus.Unknown:
+                serviceClass = "registrantLabel service-unknown";
+                break;
+            default:
+                serviceClass = "registrantLabel service-unknown";
+                break;
+        }
+
+        <tr class="@serviceClass">
+
+            <td class="@hostClass">
+                <span class="glyphicon glyphicon-map-marker"></span>
+                @Html.DisplayFor(modelItem => item.ServiceHost).ToHtmlString().ToLower()
+            </td>
+
+            <td class="@serviceClass">
+                <span class="glyphicon glyphicon-cog"></span>
+                @Html.DisplayFor(modelItem => item.ServiceDescription)
+            </td>
+
+            <td class="registrantLabel">@Html.DisplayFor(modelItem => item.ServiceName)</td>
+            <td class="registrantLabel">@Html.DisplayFor(modelItem => item.RegistrantServiceType)</td>
+            <td class="registrantLabel">@Html.DisplayFor(modelItem => item.RegisteredTimeStamp)</td>
+            
+            @{
+                if (item.ServiceStatus == ServiceHostStatus.Running || item.ServiceStatus == ServiceHostStatus.Started)
+                {
+                    <td class="service-running">
+                        @using (Html.BeginForm("ServiceAction", "Home", FormMethod.Post, new { id = "stopService", @class = "service-action" }))
+                        {
+                            <input type="hidden" value="@item.ServiceHost" name="host" />
+                            <input type="hidden" value="@item.ServiceName" name="service" />
+                            <input type="hidden" value="@item.RegistrantServiceType" name="type" />
+                            <input type="hidden" value="Stop" name="action" />
+                            <button class="btn btn-danger btn-sm">Stop</button>
+                        }
+                    </td>
+                }
+                else if(item.ServiceStatus == ServiceHostStatus.Stopped)
+                {
+                    <td class="service-stopped">
+                        @using (Html.BeginForm("ServiceAction", "Home", FormMethod.Post, new { id = "startService", @class = "service-action" }))
+                        {
+                            <input type="hidden" value="@item.ServiceHost" name="host" />
+                            <input type="hidden" value="@item.ServiceName" name="service" />
+                            <input type="hidden" value="@item.RegistrantServiceType" name="type" />
+                            <input type="hidden" value="Start" name="action" />
+                            <button class="btn btn-success btn-sm">Start</button>
+                        }
+                    </td>
+                }
+                else
+                {
+                    <td></td>
+                }
+            }
+        </tr>
+    }
+
+</table>
+<div>Monkey Monitor</div>
+<div><i>Note: </i>to Start or Stop a Service, the Monitor must be paused.</div>
+<label class="updateTimeLabel">last update at @DateTime.Now.ToString("HH:mm:ss on dd MMMM yyyy")</label>
+

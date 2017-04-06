@@ -1,0 +1,30 @@
+﻿@model List<Vps.ChaosMonkeyMonitor.ViewModels.ChaosMonitorData>
+
+<div class="container">
+
+    <div class="base">
+        <h1 class="registrant-colour1 page-title">Chaos Monkey</h1>
+        <p class="lead">Registrant Status / Information</p>
+        
+        <p class="pull-left">
+            <input type="checkbox"
+                   data-toggle="toggle"
+                   id="autorefresh-toggle"
+                   data-on="<i class='glyphicon glyphicon-refresh'></i> Refresh On"
+                   data-off="<i class='glyphicon glyphicon-pause'></i> Paused">
+        </p>
+
+        <p class="pull-left" id="intervalBlock">
+            <label class="refresh-interval-label">Refresh Interval<small> (s)</small>:</label> 
+            <div class="interval-spinner-div">
+                <input type="number" id="intervalSpinner" class="interval-spinner" name="refreshInterval" step="5" />
+            </div>
+        </p>
+
+        <div>
+            @Html.Partial("_registrantInformation", Model)            
+        </div>
+    </div>
+
+</div>
+
