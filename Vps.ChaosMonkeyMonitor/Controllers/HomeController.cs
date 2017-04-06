@@ -9,8 +9,8 @@ namespace Vps.ChaosMonkeyMonitor.Controllers
 {
     public class HomeController : Controller
     {
-        private IMonkeyHelper _monkeyHelper;
-        private IMonkeyMonitorHelper _monkeyMonitorHelper;
+        private readonly IMonkeyHelper _monkeyHelper;
+        private readonly IMonkeyMonitorHelper _monkeyMonitorHelper;
 
         public HomeController(IMonkeyHelper monkeyHelper, IMonkeyMonitorHelper monkeyMonitorHelper)
         {
@@ -40,7 +40,7 @@ namespace Vps.ChaosMonkeyMonitor.Controllers
             var chaosUri = ConfigurationManager.AppSettings["ChaosUri"];
             var chaosWebApiClient = new HttpClient();
 
-            var response = chaosWebApiClient.GetAsync(string.Format("{0}/{1}{2}?host={3}&service={4}", chaosUri, action, type, host, service)).Result;
+            var response = chaosWebApiClient.GetAsync($"{chaosUri}/{action}{type}?host={host}&service={service}").Result;
 
             return RedirectToAction("Index");
         }

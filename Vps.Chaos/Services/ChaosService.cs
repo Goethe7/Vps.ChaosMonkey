@@ -36,19 +36,13 @@ namespace Vps.Chaos.Services
                         throw new ArgumentOutOfRangeException();
                 }
 
-                var message = string.Format("Service: {0} | {1} | {2} : STOPPED", chaosVictim.ServiceHost,
-                                                                           chaosVictim.ServiceName,
-                                                                           chaosVictim.ServiceDescription);
+                var message = $"Service: {chaosVictim.ServiceHost} | {chaosVictim.ServiceName} | {chaosVictim.ServiceDescription} : STOPPED";
 
                 return message;
             }
             catch (Exception ex)
             {
-                return string.Format("## ERROR: Host: {0} | ServiceName: {1} | Description: {2} | ERROR: {3} ##",
-                                                                              chaosVictim.ServiceHost,
-                                                                              chaosVictim.ServiceName,
-                                                                              chaosVictim.ServiceDescription,
-                                                                              ex.Message);
+                return $"## ERROR: Host: {chaosVictim.ServiceHost} | ServiceName: {chaosVictim.ServiceName} | Description: {chaosVictim.ServiceDescription} | ERROR: {ex.Message} ##";
             }
         }
 
