@@ -12,8 +12,8 @@ namespace ChaosMonkeyService
     public class ChaosMonkeyService
     {
         private const string EventSource = "Chaos Monkey Service v1.0";
-        private Timer _chaosTimer;
-        private static Random randomChaos = new Random();
+        private readonly Timer _chaosTimer;
+        private static readonly Random randomChaos = new Random();
         private static int _randomControlNumberMax;
 
         public ChaosMonkeyService()
@@ -22,11 +22,11 @@ namespace ChaosMonkeyService
             {
                 EventLogSetup();
 
-                WriteToEventLog(string.Format("{0} Started", EventSource), EventLogEntryType.SuccessAudit);
-                WriteToEventLog(string.Format("{0} Event Log configured", EventSource), EventLogEntryType.SuccessAudit);
+                WriteToEventLog($"{EventSource} Started", EventLogEntryType.SuccessAudit);
+                WriteToEventLog($"{EventSource} Event Log configured", EventLogEntryType.SuccessAudit);
 
                 var chaosTimerInterval = double.Parse(ConfigurationManager.AppSettings["ChaosTimerInterval-mins"]);
-                WriteToEventLog(string.Format("Timer interval: {0}m", chaosTimerInterval), EventLogEntryType.SuccessAudit);
+                WriteToEventLog($"Timer interval: {chaosTimerInterval}m", EventLogEntryType.SuccessAudit);
 
                 _randomControlNumberMax = int.Parse(ConfigurationManager.AppSettings["RandomControlNumberMax"]);
 
@@ -36,7 +36,7 @@ namespace ChaosMonkeyService
             }
             catch (Exception ex)
             {
-                WriteToEventLog(string.Format("ERROR: {0}", ex.Message), EventLogEntryType.Error);
+                WriteToEventLog($"ERROR: {ex.Message}", EventLogEntryType.Error);
                 throw;
             }
         }
@@ -76,7 +76,7 @@ namespace ChaosMonkeyService
             }
             catch (Exception ex)
             {
-                WriteToEventLog(string.Format("ERROR: {0}", ex.Message), EventLogEntryType.Error);
+                WriteToEventLog($"ERROR: {ex.Message}", EventLogEntryType.Error);
                 throw;
             }
 

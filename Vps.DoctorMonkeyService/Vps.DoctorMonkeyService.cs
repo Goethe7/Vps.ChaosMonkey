@@ -13,9 +13,9 @@ namespace Vps.DoctorMonkeyService
     public class DoctorMonkeyService
     {
         private const string EventSource = "Doctor Monkey Service";
-        private Timer _timer;
+        private readonly Timer _timer;
 
-        private IMonkeyHelper _monkeyHelper;
+        private readonly IMonkeyHelper _monkeyHelper;
 
         public DoctorMonkeyService()
         {
@@ -24,11 +24,11 @@ namespace Vps.DoctorMonkeyService
                 _monkeyHelper = new MonkeyHelper();
                 EventLogSetup();
 
-                WriteToEventLog(string.Format("{0} Started", EventSource), EventLogEntryType.SuccessAudit);
+                WriteToEventLog($"{EventSource} Started", EventLogEntryType.SuccessAudit);
                 WriteToEventLog("The Surgery is Open", EventLogEntryType.SuccessAudit);
 
                 var timerInterval = double.Parse(ConfigurationManager.AppSettings["DoctorMonkeyTimerInterval-mins"]);
-                WriteToEventLog(string.Format("Timer interval: {0}m", timerInterval), EventLogEntryType.SuccessAudit);
+                WriteToEventLog($"Timer interval: {timerInterval}m", EventLogEntryType.SuccessAudit);
 
                 _timer = new Timer(timerInterval * 60000) { AutoReset = true };
                 _timer.Elapsed += (sender, eventArgs) => CarryOnDoctor();
@@ -36,7 +36,7 @@ namespace Vps.DoctorMonkeyService
             }
             catch (Exception ex)
             {
-                WriteToEventLog(string.Format("{0} => ERROR:: {1}", "DoctorMonkeyService()", ex.Message), EventLogEntryType.Error);
+                WriteToEventLog($"DoctorMonkeyService() => ERROR:: {ex.Message}", EventLogEntryType.Error);
                 throw;
             }
         }
@@ -48,7 +48,7 @@ namespace Vps.DoctorMonkeyService
                 var doctorUri = ConfigurationManager.AppSettings["DoctorMonkeyUri"];
                 var doctorWebApiClient = new HttpClient();
 
-                var registrants = doctorWebApiClient.GetAsync(string.Format("{0}/Registrants", doctorUri)).Result;
+                var registrants = doctorWebApiClient.GetAsync($"{doctorUri}/Registrants").Result;
                 var content = registrants.Content.ReadAsStringAsync().Result;
 
                 var patients = _monkeyHelper.Registrants(content).ToList();
@@ -66,12 +66,12 @@ namespace Vps.DoctorMonkeyService
                     {
                         WriteToEventLog("Fixing Patient: " + patient.Service + " on " + patient.Host, EventLogEntryType.SuccessAudit);
                         var reply = doctorWebApiClient
-                                        .GetAsync(string.Format("{0}/Start{1}?host={2}&service={3}", doctorUri, patient.Type, patient.Host, patient.Service))
+                                        .GetAsync($"{doctorUri}/Start{patient.Type}?host={patient.Host}&service={patient.Service}")
                                         .Result;
 
                         var patientStatus = _monkeyHelper.PatientCheckUp(patient);
 
-                        WriteToEventLog(string.Format("{0} on {1} : {2}", patient.Service, patient.Host, patientStatus), EventLogEntryType.Information);
+                        WriteToEventLog($"{patient.Service} on {patient.Host} : {patientStatus}", EventLogEntryType.Information);
                     }
                 }
                 else
@@ -81,7 +81,7 @@ namespace Vps.DoctorMonkeyService
             }
             catch (Exception ex)
             {
-                WriteToEventLog(string.Format("CarryOnDoctor() ERROR: {0}", ex.Message), EventLogEntryType.Error);
+                WriteToEventLog($"CarryOnDoctor() ERROR: {ex.Message}", EventLogEntryType.Error);
                 throw;
             }
         }
@@ -102,14 +102,14 @@ namespace Vps.DoctorMonkeyService
             if (!EventLog.SourceExists(EventSource))
             {
                 EventLog.CreateEventSource(EventSource, "Application");
-                WriteToEventLog(string.Format("{0} Event Log configured", EventSource), EventLogEntryType.SuccessAudit);
+                WriteToEventLog($"{EventSource} Event Log configured", EventLogEntryType.SuccessAudit);
             }
         }
 
         private void WriteToEventLog(string info, EventLogEntryType entryType)
         {
             Console.Write("{0} : {1}\n", DateTime.Now, info);
-            EventLog.WriteEntry(EventSource, string.Format("{0} : {1}", DateTime.Now, info), entryType);
+            EventLog.WriteEntry(EventSource, $"{DateTime.Now} : {info}", entryType);
         }
     }
 }
