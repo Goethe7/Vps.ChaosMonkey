@@ -26,7 +26,7 @@ namespace Vps.Monkey.Common.Helpers
             {
                 list = list.TrimStart('\"');
                 list = list.TrimEnd('\"');
-                list = list.Replace("\\", "");
+                list = list.Replace("\\", string.Empty);
 
                 var registrantList = JsonConvert.DeserializeObject<List<Registrant>>(list) ?? new List<Registrant>();
 
@@ -34,7 +34,7 @@ namespace Vps.Monkey.Common.Helpers
             }
             catch (Exception ex)
             {
-                WriteToEventLog(string.Format("Registrants() ERROR: {0}", ex.Message), EventLogEntryType.Error);
+                WriteToEventLog($"Registrants() ERROR: {ex.Message}", EventLogEntryType.Error);
                 throw;
             }
         }
@@ -54,7 +54,7 @@ namespace Vps.Monkey.Common.Helpers
             }
             catch (Exception ex)
             {
-                WriteToEventLog(string.Format("GetHostServiceInfo() ERROR: {0}", ex.Message), EventLogEntryType.Error);
+                WriteToEventLog($"GetHostServiceInfo() ERROR: {ex.Message}", EventLogEntryType.Error);
                 throw;
             }
         }
@@ -69,7 +69,7 @@ namespace Vps.Monkey.Common.Helpers
             }
             catch (Exception ex)
             {
-                WriteToEventLog(string.Format("HostReachable() ERROR: {0}", ex.Message), EventLogEntryType.Error);
+                WriteToEventLog($"HostReachable() ERROR: {ex.Message}", EventLogEntryType.Error);
                 return false;
             }
         }
@@ -108,7 +108,7 @@ namespace Vps.Monkey.Common.Helpers
             }
             catch (Exception ex)
             {
-                WriteToEventLog(string.Format("GetServiceStatus() ERROR: {0}", ex.Message), EventLogEntryType.Error);
+                WriteToEventLog($"GetServiceStatus() ERROR: {ex.Message}", EventLogEntryType.Error);
                 throw;
             }
         }
@@ -148,7 +148,7 @@ namespace Vps.Monkey.Common.Helpers
             }
             catch (Exception ex)
             {
-                WriteToEventLog(string.Format("ServiceRunning() ERROR: {0}", ex.Message), EventLogEntryType.Error);
+                WriteToEventLog($"ServiceRunning() ERROR: {ex.Message}", EventLogEntryType.Error);
                 throw;
             }
         }
@@ -186,7 +186,7 @@ namespace Vps.Monkey.Common.Helpers
             }
             catch (Exception ex)
             {
-                WriteToEventLog(string.Format("SiteRunning() ERROR: {0}", ex.Message + " :: " + ex.Message + " :: " + ex.StackTrace), EventLogEntryType.Error);
+                WriteToEventLog($"SiteRunning() ERROR: {ex.Message + " :: " + ex.Message + " :: " + ex.StackTrace}", EventLogEntryType.Error);
                 return ServiceHostStatus.Unknown;
             }
         }
@@ -195,14 +195,14 @@ namespace Vps.Monkey.Common.Helpers
             if (!EventLog.SourceExists(EventSource))
             {
                 EventLog.CreateEventSource(EventSource, "Application");
-                WriteToEventLog(string.Format("{0} Event Log configured", EventSource), EventLogEntryType.SuccessAudit);
+                WriteToEventLog($"{EventSource} Event Log configured", EventLogEntryType.SuccessAudit);
             }
         }
 
         private void WriteToEventLog(string info, EventLogEntryType entryType)
         {
             Console.Write("{0} : {1}\n", DateTime.Now, info);
-            EventLog.WriteEntry(EventSource, string.Format("{0} : {1}", DateTime.Now, info), entryType);
+            EventLog.WriteEntry(EventSource, $"{DateTime.Now} : {info}", entryType);
         }
     }
 }

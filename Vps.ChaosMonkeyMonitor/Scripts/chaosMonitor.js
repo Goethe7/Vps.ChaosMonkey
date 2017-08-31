@@ -121,7 +121,7 @@ $(".service-action").submit(function (event) {
             if (result) {
                 currentForm.submit();
             } else {
-                
+                //
             }
         }
     });
