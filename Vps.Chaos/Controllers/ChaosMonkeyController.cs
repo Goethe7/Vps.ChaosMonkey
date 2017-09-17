@@ -73,7 +73,7 @@ namespace Vps.Chaos.Controllers
         [AcceptVerbs("GET")]
         public string HeartBeatMessage()
         {
-            return string.Format("Chaos on {0:dd-MMM-yyyy @ HH:mmm:ss}", HeartBeat());
+            return $"Chaos on {this.HeartBeat():dd-MMM-yyyy @ HH:mmm:ss}";
         }
 
         [AcceptVerbs("GET")]
