@@ -66,6 +66,5 @@ namespace Vps.Chaos.Helpers
         {
             return (T)Enum.Parse(typeof(T), value, ignoreCase: true);
         }
-
     }
 }

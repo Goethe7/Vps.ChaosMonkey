@@ -77,7 +77,6 @@ namespace Vps.Chaos.Services
             ServerManager.OpenRemote(target.ServiceHost)
                          .ApplicationPools[target.ServiceName]
                          .Stop();
-
         }
 
         public void StartSite(Registrant target)
@@ -86,6 +85,5 @@ namespace Vps.Chaos.Services
                          .ApplicationPools[target.ServiceName]
                          .Start();
         }
-
     }
 }
