@@ -21,14 +21,19 @@ namespace Vps.ChaosMonkeyMonitor.Controllers
         [HttpGet]
         public ActionResult Index()
         {
-            var chaosUri = ConfigurationManager.AppSettings["ChaosUri"];
-            var chaosWebApiClient = new HttpClient();
+            //var chaosUri = ConfigurationManager.AppSettings["ChaosUri"];
+            //var chaosWebApiClient = new HttpClient();
 
-            var response = chaosWebApiClient.GetAsync(string.Format("{0}/Registrants", chaosUri)).Result;
-            var content = response.Content.ReadAsStringAsync().Result;
+            //var response = chaosWebApiClient.GetAsync($"{chaosUri}/Registrants").Result;
+            //var content = response.Content.ReadAsStringAsync().Result;
 
-            var registrantList = _monkeyHelper.Registrants(content).ToList();
-            var hostServiceInfo = _monkeyHelper.GetHostServiceInfo(registrantList).ToList();
+            //var registrantList = _monkeyHelper.Registrants(content).ToList();
+            //var hostServiceInfo = _monkeyHelper.GetHostServiceInfo(registrantList).ToList();
+
+            var registrantList = _monkeyHelper.DummyRegistrantList();
+            var hostServiceInfo = _monkeyHelper.DummyHostServiceInfo();
+
+
             var chaosMonitorData = _monkeyMonitorHelper.MapForView(registrantList, hostServiceInfo);
 
             return View(chaosMonitorData);

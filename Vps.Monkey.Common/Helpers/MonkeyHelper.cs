@@ -190,6 +190,61 @@ namespace Vps.Monkey.Common.Helpers
                 return ServiceHostStatus.Unknown;
             }
         }
+
+        public List<Registrant> DummyRegistrantList()
+        {
+            var list = new List<Registrant>
+                           {
+                               new Registrant
+                                   {
+                                       RegisteredTimeStamp = DateTime.Now,
+                                       RegistrantServiceType = RegistrantType.Service,
+                                       ServiceDescription = "Chaos Monkey Service",
+                                       ServiceHost = "GrooviHost",
+                                       ServiceName = "GrooviService"
+                                   },
+
+                               new Registrant
+                                   {
+                                       RegisteredTimeStamp = DateTime.Now.AddMonths(-2),
+                                       RegistrantServiceType = RegistrantType.Site,
+                                       ServiceDescription = "Chaos Monkey Site",
+                                       ServiceHost = "GrooviWebServer007",
+                                       ServiceName = "GrooviSite"
+                                   }
+                           };
+
+            return list;
+
+        }
+
+        public List<HostServiceInfo> DummyHostServiceInfo()
+        {
+            var list = new List<HostServiceInfo>
+                           {
+                               new HostServiceInfo
+                                   {
+                                       Host = "GrooviHost",
+                                       HostReachable = true,
+                                       Service = "GrooviService",
+                                       ServiceStatus = ServiceHostStatus.Running,
+                                       Type = RegistrantType.Service
+                                   },
+
+                               new HostServiceInfo
+                                   {
+                                       Host = "GrooviWebServer007",
+                                       HostReachable = true,
+                                       Service = "GrooviSite",
+                                       ServiceStatus = ServiceHostStatus.Stopped,
+                                       Type = RegistrantType.Site
+                                   }
+                           };
+
+
+            return list;
+        }
+
         private void EventLogSetup()
         {
             if (!EventLog.SourceExists(EventSource))

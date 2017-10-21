@@ -48,7 +48,7 @@ function showWait() {
     $("body").css('cursor', 'wait');
     $("#loader").removeClass("hide");
     $("#loader").addClass("show");
-    $("#waitertext").html("Please wait ...");
+    $("#waitertext").html("Refreshing, please wait ...");
 }
 
 function hideWait() {

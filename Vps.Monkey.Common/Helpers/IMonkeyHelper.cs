@@ -14,5 +14,8 @@ namespace Vps.Monkey.Common.Helpers
         ServiceHostStatus ServiceRunning(string host, string service);
         ServiceHostStatus SiteRunning(string host, string service);
         ServiceHostStatus ServiceStatus(Registrant host);
+
+        List<Registrant> DummyRegistrantList();
+        List<HostServiceInfo> DummyHostServiceInfo();
     }
 }
