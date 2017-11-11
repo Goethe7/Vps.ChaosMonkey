@@ -24,9 +24,7 @@ namespace Vps.Monkey.Common.Helpers
         {
             try
             {
-                list = list.TrimStart('\"');
-                list = list.TrimEnd('\"');
-                list = list.Replace("\\", string.Empty);
+                list = PrepareList(list);
 
                 var registrantList = JsonConvert.DeserializeObject<List<Registrant>>(list) ?? new List<Registrant>();
 
@@ -37,6 +35,14 @@ namespace Vps.Monkey.Common.Helpers
                 WriteToEventLog($"Registrants() ERROR: {ex.Message}", EventLogEntryType.Error);
                 throw;
             }
+        }
+
+        public string PrepareList(string list)
+        {
+            list = list.TrimStart('\"');
+            list = list.TrimEnd('\"');
+            list = list.Replace("\\", string.Empty);
+            return list;
         }
 
         public List<HostServiceInfo> GetHostServiceInfo(List<Registrant> hosts)
@@ -240,7 +246,6 @@ namespace Vps.Monkey.Common.Helpers
                                        Type = RegistrantType.Site
                                    }
                            };
-
 
             return list;
         }
