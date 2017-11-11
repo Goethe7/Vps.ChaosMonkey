@@ -225,7 +225,7 @@ namespace Vps.Monkey.Common.Helpers
                                new HostServiceInfo
                                    {
                                        Host = "GrooviHost",
-                                       HostReachable = true,
+                                       HostReachable = false,
                                        Service = "GrooviService",
                                        ServiceStatus = ServiceHostStatus.Running,
                                        Type = RegistrantType.Service
