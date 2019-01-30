@@ -9,7 +9,7 @@ namespace Vps.Chaos.Services
 {
     public class ChaosService : IChaosService
     {
-        private IChaosRegistrantHelper _registrantHelper;
+        private readonly IChaosRegistrantHelper _registrantHelper;
 
         public ChaosService(IChaosRegistrantHelper registrantHelper)
         {

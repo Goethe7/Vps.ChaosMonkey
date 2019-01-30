@@ -5,11 +5,11 @@ namespace Vps.Chaos.Helpers
 {
     public static class ChaosHelper
     {
-        private static readonly Random rnd = new Random();
+        private static readonly Random Rnd = new Random();
 
         public static T RandomCandidateForChaos<T>(this IList<T> list)
         {
-            return list[rnd.Next(0, list.Count)];
+            return list[Rnd.Next(0, list.Count)];
         }
     }
 }
