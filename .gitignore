@@ -18,3 +18,10 @@ packages/
 =======
 # Add any directories, files, or patterns you don't want to be tracked by version control
 
+/.vs/Vps.ChaosMonkey/v15/Server/sqlite3/storage.ide-wal
+/.vs/Vps.ChaosMonkey/v15/Server/sqlite3/storage.ide-shm
+/.vs/Vps.ChaosMonkey/v15/Server/sqlite3/storage.ide
+/.vs/Vps.ChaosMonkey/v15/Server/sqlite3/db.lock
+/.vs/Vps.ChaosMonkey/v15/Server/sqlite3
+/.vs/Vps.ChaosMonkey/DesignTimeBuild/.dtbcache
+/.vs/Vps.ChaosMonkey/DesignTimeBuild
