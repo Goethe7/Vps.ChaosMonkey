@@ -70,7 +70,7 @@ namespace ChaosMonkeyService
                 }
                 else
                 {
-                    WriteToEventLog("Chaos Monkey is not feeling mischievous, but maybe next time .... ;}", EventLogEntryType.SuccessAudit);
+                    WriteToEventLog("Chaos Monkey is not feeling mischievous, but maybe next time ... ;}", EventLogEntryType.SuccessAudit);
                 }
 
             }
