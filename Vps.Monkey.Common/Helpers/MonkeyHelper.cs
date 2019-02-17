@@ -212,11 +212,20 @@ namespace Vps.Monkey.Common.Helpers
 
                                new Registrant
                                    {
-                                       RegisteredTimeStamp = DateTime.Now.AddMonths(-2),
+                                       RegisteredTimeStamp = DateTime.Now.AddDays(-68),
                                        RegistrantServiceType = RegistrantType.Site,
                                        ServiceDescription = "Chaos Monkey Site",
                                        ServiceHost = "GrooviWebServer007",
                                        ServiceName = "GrooviSite"
+                                   },
+
+                               new Registrant
+                                   {
+                                       RegisteredTimeStamp = DateTime.Now.AddDays(-25),
+                                       RegistrantServiceType = RegistrantType.Site,
+                                       ServiceDescription = "Chaos Monkey GitLab Site",
+                                       ServiceHost = "GrooviGitLab123",
+                                       ServiceName = "GrooviGitLabSite"
                                    }
                            };
 
@@ -231,7 +240,7 @@ namespace Vps.Monkey.Common.Helpers
                                new HostServiceInfo
                                    {
                                        Host = "GrooviHost",
-                                       HostReachable = false,
+                                       HostReachable = true,
                                        Service = "GrooviService",
                                        ServiceStatus = ServiceHostStatus.Running,
                                        Type = RegistrantType.Service
@@ -242,8 +251,17 @@ namespace Vps.Monkey.Common.Helpers
                                        Host = "GrooviWebServer007",
                                        HostReachable = true,
                                        Service = "GrooviSite",
-                                       ServiceStatus = ServiceHostStatus.Stopped,
+                                       ServiceStatus = ServiceHostStatus.Running,
                                        Type = RegistrantType.Site
+                                   },
+
+                               new HostServiceInfo
+                                   {
+                                       Host = "GrooviGitLab123",
+                                       HostReachable = true,
+                                       Service = "GrooviGitLabSite",
+                                       ServiceStatus = ServiceHostStatus.Running,
+                                       Type = RegistrantType.Service
                                    }
                            };
 
