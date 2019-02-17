@@ -1,4 +1,5 @@
-﻿using System.Configuration;
+﻿using System;
+using System.Configuration;
 using System.Linq;
 using System.Net.Http;
 using System.Web.Mvc;
@@ -50,5 +51,10 @@ namespace Vps.ChaosMonkeyMonitor.Controllers
             return RedirectToAction("Index");
         }
 
+        [HttpGet]
+        public DateTime HeartBeat()
+        {
+            return DateTime.Now;
+        }
     }
 }
