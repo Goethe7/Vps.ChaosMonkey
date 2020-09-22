@@ -1,0 +1,576 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="4891c730-1fbc-4415-b63d-e39e7647c726" name="Default Changelist" comment="" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="GrooviTest@localhost" type="feb32156:DbDataSourceImpl" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="GrooviTest@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="GrooviTest: database" type="ccb7ac2a:MsImplModel$Database" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="GrooviTest@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="GrooviTest: database" type="ccb7ac2a:MsImplModel$Database" />
+        <item name="dbo: schema" type="2865ee2e:MsImplModel$Schema" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="GrooviTest@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="GrooviTest: database" type="ccb7ac2a:MsImplModel$Database" />
+        <item name="dbo: schema" type="2865ee2e:MsImplModel$Schema" />
+        <item name="Base: table" type="63ab2ba1:MsImplModel$Table" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="FavoritesManager">
+    <favorites_list name="Vps.ChaosMonkey" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Vps.ChaosMonkeyMonitor/Scripts/chaosMonitor.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1350">
+              <caret line="90" column="9" selection-start-line="90" selection-start-column="9" selection-end-line="90" selection-end-column="9" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Vps.Chaos/Controllers/ChaosMonkeyController.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="240">
+              <caret line="18" selection-start-line="18" selection-end-line="18" />
+              <folding>
+                <element signature="e#0#118#0" expanded="true" />
+                <marker date="1582987870959" expanded="true" signature="151:2557" ph="{...}" />
+                <marker date="1582987870959" expanded="true" signature="208:2555" ph="{...}" />
+                <marker date="1582987870959" expanded="true" signature="442:554" ph="{...}" />
+                <marker date="1582987870959" expanded="true" signature="701:816" ph="{...}" />
+                <marker date="1582987870959" expanded="true" signature="938:1035" ph="{...}" />
+                <marker date="1582987870959" expanded="true" signature="1114:1207" ph="{...}" />
+                <marker date="1582987870959" expanded="true" signature="1298:1365" ph="{...}" />
+                <marker date="1582987870959" expanded="true" signature="1482:1591" ph="{...}" />
+                <marker date="1582987870959" expanded="true" signature="1709:1820" ph="{...}" />
+                <marker date="1582987870959" expanded="true" signature="1934:2041" ph="{...}" />
+                <marker date="1582987870959" expanded="true" signature="2156:2264" ph="{...}" />
+                <marker date="1582987870959" expanded="true" signature="2335:2430" ph="{...}" />
+                <marker date="1582987870959" expanded="true" signature="2496:2549" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Vps.Chaos/Helpers/ChaosHelper.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="105">
+              <caret line="7" column="58" selection-start-line="7" selection-start-column="58" selection-end-line="7" selection-end-column="58" />
+              <folding>
+                <element signature="e#0#47#0" expanded="true" />
+                <marker date="1582987870956" expanded="true" signature="114:327" ph="{...}" />
+                <marker date="1582987870956" expanded="true" signature="251:321" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Vps.Chaos/Web.config">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="270">
+              <caret line="18" column="18" selection-start-line="18" selection-start-column="18" selection-end-line="18" selection-end-column="18" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Vps.Chaos/Services/ChaosService.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="135">
+              <caret line="14" column="9" selection-start-line="14" selection-start-column="9" selection-end-line="14" selection-end-column="9" />
+              <folding>
+                <marker date="1582987870952" expanded="true" signature="244:2934" ph="{...}" />
+                <marker date="1582987870952" expanded="true" signature="387:457" ph="{...}" />
+                <marker date="1582987870952" expanded="true" signature="493:1523" ph="{...}" />
+                <marker date="1582987870952" expanded="true" signature="620:1269" ph="{...}" />
+                <marker date="1582987870952" expanded="true" signature="693:1079" ph="{...}" />
+                <marker date="1582987870952" expanded="true" signature="1302:1513" ph="{...}" />
+                <marker date="1582987870952" expanded="true" signature="1575:2000" ph="{...}" />
+                <marker date="1582987870952" expanded="true" signature="2053:2480" ph="{...}" />
+                <marker date="1582987870952" expanded="true" signature="2529:2703" ph="{...}" />
+                <marker date="1582987870952" expanded="true" signature="2753:2928" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Vps.Chaos/Helpers/ChaosRegistrantHelper.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="615">
+              <caret line="49" column="13" selection-start-line="49" selection-start-column="13" selection-end-line="49" selection-end-column="13" />
+              <folding>
+                <marker date="1582987870955" expanded="true" signature="318:2732" ph="{...}" />
+                <marker date="1582987870955" expanded="true" signature="381:576" ph="{...}" />
+                <marker date="1582987870955" expanded="true" signature="628:773" ph="{...}" />
+                <marker date="1582987870955" expanded="true" signature="890:1389" ph="{...}" />
+                <marker date="1582987870955" expanded="true" signature="1477:1798" ph="{...}" />
+                <marker date="1582987870955" expanded="true" signature="1929:2286" ph="{...}" />
+                <marker date="1582987870955" expanded="true" signature="1986:2275" ph="{...}" />
+                <marker date="1582987870955" expanded="true" signature="2366:2584" ph="{...}" />
+                <marker date="1582987870955" expanded="true" signature="2636:2726" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Vps.Monkey.Common/Helpers/MonkeyHelper.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="120">
+              <caret line="17" column="29" selection-start-line="17" selection-start-column="29" selection-end-line="17" selection-end-column="29" />
+              <folding>
+                <marker date="1582987870926" expanded="true" signature="365:10648" ph="{...}" />
+                <marker date="1582987870926" expanded="true" signature="462:511" ph="{...}" />
+                <marker date="1582987870926" expanded="true" signature="569:1014" ph="{...}" />
+                <marker date="1582987870926" expanded="true" signature="595:824" ph="{...}" />
+                <marker date="1582987870926" expanded="true" signature="857:1004" ph="{...}" />
+                <marker date="1582987870926" expanded="true" signature="1062:1240" ph="{...}" />
+                <marker date="1582987870926" expanded="true" signature="1321:1956" ph="{...}" />
+                <marker date="1582987870926" expanded="true" signature="1347:1759" ph="{...}" />
+                <marker date="1582987870926" expanded="true" signature="1442:1734" ph="{...}" />
+                <marker date="1582987870926" expanded="true" signature="1792:1946" ph="{...}" />
+                <marker date="1582987870926" expanded="true" signature="2008:2417" ph="{...}" />
+                <marker date="1582987870926" expanded="true" signature="2034:2218" ph="{...}" />
+                <marker date="1582987870926" expanded="true" signature="2251:2407" ph="{...}" />
+                <marker date="1582987870926" expanded="true" signature="2496:2610" ph="{...}" />
+                <marker date="1582987870926" expanded="true" signature="2675:2796" ph="{...}" />
+                <marker date="1582987870926" expanded="true" signature="2897:3785" ph="{...}" />
+                <marker date="1582987870926" expanded="true" signature="2983:3590" ph="{...}" />
+                <marker date="1582987870926" expanded="true" signature="3027:3537" ph="{...}" />
+                <marker date="1582987870926" expanded="true" signature="3623:3775" ph="{...}" />
+                <marker date="1582987870926" expanded="true" signature="3863:5332" ph="{...}" />
+                <marker date="1582987870926" expanded="true" signature="3889:5139" ph="{...}" />
+                <marker date="1582987870926" expanded="true" signature="4171:5093" ph="{...}" />
+                <marker date="1582987870926" expanded="true" signature="5172:5322" ph="{...}" />
+                <marker date="1582987870926" expanded="true" signature="5407:6713" ph="{...}" />
+                <marker date="1582987870926" expanded="true" signature="5433:6449" ph="{...}" />
+                <marker date="1582987870926" expanded="true" signature="5675:6402" ph="{...}" />
+                <marker date="1582987870926" expanded="true" signature="6482:6703" ph="{...}" />
+                <marker date="1582987870926" expanded="true" signature="6768:8462" ph="{...}" />
+                <marker date="1582987870926" expanded="true" signature="6850:8424" ph="{...}" />
+                <marker date="1582987870926" expanded="true" signature="6933:7353" ph="{...}" />
+                <marker date="1582987870926" expanded="true" signature="7437:7869" ph="{...}" />
+                <marker date="1582987870926" expanded="true" signature="7953:8395" ph="{...}" />
+                <marker date="1582987870926" expanded="true" signature="8523:10080" ph="{...}" />
+                <marker date="1582987870926" expanded="true" signature="8610:10043" ph="{...}" />
+                <marker date="1582987870926" expanded="true" signature="8698:9074" ph="{...}" />
+                <marker date="1582987870926" expanded="true" signature="9163:9541" ph="{...}" />
+                <marker date="1582987870926" expanded="true" signature="9630:10014" ph="{...}" />
+                <marker date="1582987870926" expanded="true" signature="10118:10395" ph="{...}" />
+                <marker date="1582987870926" expanded="true" signature="10181:10385" ph="{...}" />
+                <marker date="1582987870926" expanded="true" signature="10475:10642" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Vps.ChaosMonkeyMonitor/Helpers/MonkeyMonitorHelper.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Vps.Chaos/Services/ChaosService.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Vps.Chaos/Helpers/ChaosHelper.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Vps.Chaos/Helpers/ChaosRegistrantHelper.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Vps.ChaosMonkeyMonitor/Controllers/HomeController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Vps.Chaos/Controllers/ChaosMonkeyController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Vps.Chaos/Web.config" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Vps.Monkey.Common/Helpers/MonkeyHelper.cs" root0="FORCE_HIGHLIGHTING" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/Vps.ChaosMonkeyMonitor/Controllers/HomeController.cs" />
+        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/f13caf03-55ea-4937-ba10-39cae35b3708/console.sql" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-10" />
+    <option name="y" value="-10" />
+    <option name="width" value="1750" />
+    <option name="height" value="980" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="SolutionExplorer" proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="AssemblyExplorer" />
+      <pane id="SolutionExplorer">
+        <subPane>
+          <expand>
+            <path>
+              <item name="Project" type="784c90a0:SolutionExplorerRootNode" />
+              <item name="Vps.ChaosMonkey" type="24d0babc:SolutionExplorerModelNode" />
+            </path>
+            <path>
+              <item name="Project" type="784c90a0:SolutionExplorerRootNode" />
+              <item name="Scratches and Consoles" type="1a2a3e82:ScratchProjectViewPane$MyProjectNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+        <option name="show-all-files" value="false" />
+      </pane>
+      <pane id="FileSystemExplorer" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DatabaseDriversLRU" value="sqlserver" />
+    <property name="Rider.DefaultBreakpoints.AreToggled" value="true" />
+    <property name="Rider.ProjectViewActivator.IsNotFirstRun" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="database.console.LAST_STATE" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../first-angular-2-web-api" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration name="Default" type="DotNetProject" factoryName=".NET Project">
+      <option name="EXE_PATH" value="C:/Program Files (x86)/IIS Express/iisexpress.exe" />
+      <option name="PROGRAM_PARAMETERS" value="/config:$PROJECT_DIR$/.idea/config/applicationhost.config /site:Vps.ChaosMonkey /apppool:Clr4IntegratedAppPool" />
+      <option name="WORKING_DIRECTORY" value="C:/Program Files (x86)/IIS Express" />
+      <option name="PASS_PARENT_ENVS" value="1" />
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <option name="USE_MONO" value="0" />
+      <option name="RUNTIME_ARGUMENTS" value="" />
+      <option name="PROJECT_PATH" value="$PROJECT_DIR$/Vps.Chaos/Vps.ChaosMonkey.csproj" />
+      <option name="PROJECT_EXE_PATH_TRACKING" value="1" />
+      <option name="PROJECT_ARGUMENTS_TRACKING" value="1" />
+      <option name="PROJECT_WORKING_DIRECTORY_TRACKING" value="1" />
+      <option name="PROJECT_KIND" value="Web" />
+      <option name="PROJECT_TFM" value=".NETFramework,Version=v4.5.2" />
+      <browser url="http://localhost:54980/" start="true" />
+      <method v="2">
+        <option name="Build" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="StructureViewFactory">
+    <option name="AUTOSCROLL_FROM_SOURCE" value="true" />
+    <option name="ACTIVE_ACTIONS" value=",ALPHA_COMPARATOR" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="4891c730-1fbc-4415-b63d-e39e7647c726" name="Default Changelist" comment="" />
+      <created>1552759900299</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1552759900299</updated>
+      <workItem from="1552759901846" duration="127000" />
+      <workItem from="1553984903227" duration="2392000" />
+      <workItem from="1582988144382" duration="445000" />
+      <workItem from="1600797538086" duration="53000" />
+    </task>
+    <task id="LOCAL-00001" summary="removed unused using">
+      <created>1553985240454</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1553985240454</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="3017000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <layout>
+      <window_info id="Image Layers" order="0" />
+      <window_info id="Capture Tool" order="1" />
+      <window_info id="Favorites" order="2" side_tool="true" weight="0.3295302" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.5026846" side_tool="true" visible="true" weight="0.20058565" />
+      <window_info anchor="bottom" id="NuGet" order="7" />
+      <window_info anchor="bottom" id="Performance Profiler" order="8" sideWeight="0.49932885" weight="0.329429" />
+      <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="10" sideWeight="0.49731544" visible="true" weight="0.20058565" />
+      <window_info anchor="bottom" id="Database Changes" order="11" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Unit Tests" order="12" sideWeight="0.49932885" weight="0.193265" />
+      <window_info anchor="bottom" id="REST Client" order="13" weight="0.42606148" />
+      <window_info anchor="bottom" id="Terminal" order="14" sideWeight="0.49932885" weight="0.32796487" />
+      <window_info anchor="bottom" id="Event Log" order="15" side_tool="true" weight="0.329429" />
+      <window_info anchor="bottom" id="Database Console" order="16" weight="0.30893117" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Capture Analysis" order="3" />
+      <window_info anchor="right" id="Errors In Solution" order="4" sideWeight="0.49910873" weight="0.3295302" />
+      <window_info anchor="right" id="Database" order="5" sideWeight="0.4973262" weight="0.14832215" />
+      <window_info anchor="right" id="Unit Tests Coverage" order="6" sideWeight="0.49910873" weight="0.3295302" />
+      <window_info active="true" anchor="right" content_ui="combo" id="Project" order="7" sideWeight="0.7728938" visible="true" weight="0.2261745" />
+      <window_info anchor="right" id="Structure" order="8" sideWeight="0.22710623" side_tool="true" visible="true" weight="0.2261745" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="UnityProjectConfiguration" hasMinimizedUI="false" />
+  <component name="UnityUnitTestConfiguration" currentTestLauncher="NUnit" />
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="removed unused using" />
+    <option name="LAST_COMMIT_MESSAGE" value="removed unused using" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" suspend="NONE" type="DotNet Exception Breakpoints">
+          <properties exception="System.Threading.ThreadAbortException" displayValue="System.Threading.ThreadAbortException" />
+          <option name="timeStamp" value="1" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/927aac7d-3f60-4592-bd3d-684ce5870f0c/console.sql">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Vps.ChaosMonkeyMonitor/Controllers/HomeController.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="44" selection-start-line="9" selection-start-column="44" selection-end-line="9" selection-end-column="44" />
+          <folding>
+            <marker date="1553985192851" expanded="true" signature="6:157" ph="..." />
+            <marker date="1553985192851" expanded="true" signature="203:1986" ph="{...}" />
+            <marker date="1553985192851" expanded="true" signature="250:1984" ph="{...}" />
+            <marker date="1553985192851" expanded="true" signature="479:597" ph="{...}" />
+            <marker date="1553985192851" expanded="true" signature="652:1434" ph="{...}" />
+            <marker date="1553985192851" expanded="true" signature="675:1134" ph="/* var chaosUri = ConfigurationManager.AppSettings[&quot;ChaosUri&quot;]; ... */" />
+            <marker date="1553985192851" expanded="true" signature="1553:1870" ph="{...}" />
+            <marker date="1553985192851" expanded="true" signature="1925:1978" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Vps.ChaosMonkeyMonitor/Helpers/MonkeyMonitorHelper.cs">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/f13caf03-55ea-4937-ba10-39cae35b3708/console.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="18" selection-start-column="18" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Vps.Chaos/PowerShellScripts/Register4Chaos.ps1">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Vps.Chaos/PowerShellScripts/Registrants4Chaos.ps1">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Vps.Chaos/App_Data/chaotic-registrants.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="28" lean-forward="true" selection-start-line="3" selection-start-column="28" selection-end-line="3" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Vps.Chaos/PowerShellScripts/UnRegister4Chaos.ps1">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Vps.Chaos/Web.config">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="18" column="18" selection-start-line="18" selection-start-column="18" selection-end-line="18" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Vps.Chaos/Services/ChaosService.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="14" column="9" selection-start-line="14" selection-start-column="9" selection-end-line="14" selection-end-column="9" />
+          <folding>
+            <marker date="1582987870952" expanded="true" signature="244:2934" ph="{...}" />
+            <marker date="1582987870952" expanded="true" signature="387:457" ph="{...}" />
+            <marker date="1582987870952" expanded="true" signature="493:1523" ph="{...}" />
+            <marker date="1582987870952" expanded="true" signature="620:1269" ph="{...}" />
+            <marker date="1582987870952" expanded="true" signature="693:1079" ph="{...}" />
+            <marker date="1582987870952" expanded="true" signature="1302:1513" ph="{...}" />
+            <marker date="1582987870952" expanded="true" signature="1575:2000" ph="{...}" />
+            <marker date="1582987870952" expanded="true" signature="2053:2480" ph="{...}" />
+            <marker date="1582987870952" expanded="true" signature="2529:2703" ph="{...}" />
+            <marker date="1582987870952" expanded="true" signature="2753:2928" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Vps.Chaos/Helpers/ChaosRegistrantHelper.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="615">
+          <caret line="49" column="13" selection-start-line="49" selection-start-column="13" selection-end-line="49" selection-end-column="13" />
+          <folding>
+            <marker date="1582987870955" expanded="true" signature="318:2732" ph="{...}" />
+            <marker date="1582987870955" expanded="true" signature="381:576" ph="{...}" />
+            <marker date="1582987870955" expanded="true" signature="628:773" ph="{...}" />
+            <marker date="1582987870955" expanded="true" signature="890:1389" ph="{...}" />
+            <marker date="1582987870955" expanded="true" signature="1477:1798" ph="{...}" />
+            <marker date="1582987870955" expanded="true" signature="1929:2286" ph="{...}" />
+            <marker date="1582987870955" expanded="true" signature="1986:2275" ph="{...}" />
+            <marker date="1582987870955" expanded="true" signature="2366:2584" ph="{...}" />
+            <marker date="1582987870955" expanded="true" signature="2636:2726" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Vps.Monkey.Common/Helpers/MonkeyHelper.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="17" column="29" selection-start-line="17" selection-start-column="29" selection-end-line="17" selection-end-column="29" />
+          <folding>
+            <marker date="1582987870926" expanded="true" signature="365:10648" ph="{...}" />
+            <marker date="1582987870926" expanded="true" signature="462:511" ph="{...}" />
+            <marker date="1582987870926" expanded="true" signature="569:1014" ph="{...}" />
+            <marker date="1582987870926" expanded="true" signature="595:824" ph="{...}" />
+            <marker date="1582987870926" expanded="true" signature="857:1004" ph="{...}" />
+            <marker date="1582987870926" expanded="true" signature="1062:1240" ph="{...}" />
+            <marker date="1582987870926" expanded="true" signature="1321:1956" ph="{...}" />
+            <marker date="1582987870926" expanded="true" signature="1347:1759" ph="{...}" />
+            <marker date="1582987870926" expanded="true" signature="1442:1734" ph="{...}" />
+            <marker date="1582987870926" expanded="true" signature="1792:1946" ph="{...}" />
+            <marker date="1582987870926" expanded="true" signature="2008:2417" ph="{...}" />
+            <marker date="1582987870926" expanded="true" signature="2034:2218" ph="{...}" />
+            <marker date="1582987870926" expanded="true" signature="2251:2407" ph="{...}" />
+            <marker date="1582987870926" expanded="true" signature="2496:2610" ph="{...}" />
+            <marker date="1582987870926" expanded="true" signature="2675:2796" ph="{...}" />
+            <marker date="1582987870926" expanded="true" signature="2897:3785" ph="{...}" />
+            <marker date="1582987870926" expanded="true" signature="2983:3590" ph="{...}" />
+            <marker date="1582987870926" expanded="true" signature="3027:3537" ph="{...}" />
+            <marker date="1582987870926" expanded="true" signature="3623:3775" ph="{...}" />
+            <marker date="1582987870926" expanded="true" signature="3863:5332" ph="{...}" />
+            <marker date="1582987870926" expanded="true" signature="3889:5139" ph="{...}" />
+            <marker date="1582987870926" expanded="true" signature="4171:5093" ph="{...}" />
+            <marker date="1582987870926" expanded="true" signature="5172:5322" ph="{...}" />
+            <marker date="1582987870926" expanded="true" signature="5407:6713" ph="{...}" />
+            <marker date="1582987870926" expanded="true" signature="5433:6449" ph="{...}" />
+            <marker date="1582987870926" expanded="true" signature="5675:6402" ph="{...}" />
+            <marker date="1582987870926" expanded="true" signature="6482:6703" ph="{...}" />
+            <marker date="1582987870926" expanded="true" signature="6768:8462" ph="{...}" />
+            <marker date="1582987870926" expanded="true" signature="6850:8424" ph="{...}" />
+            <marker date="1582987870926" expanded="true" signature="6933:7353" ph="{...}" />
+            <marker date="1582987870926" expanded="true" signature="7437:7869" ph="{...}" />
+            <marker date="1582987870926" expanded="true" signature="7953:8395" ph="{...}" />
+            <marker date="1582987870926" expanded="true" signature="8523:10080" ph="{...}" />
+            <marker date="1582987870926" expanded="true" signature="8610:10043" ph="{...}" />
+            <marker date="1582987870926" expanded="true" signature="8698:9074" ph="{...}" />
+            <marker date="1582987870926" expanded="true" signature="9163:9541" ph="{...}" />
+            <marker date="1582987870926" expanded="true" signature="9630:10014" ph="{...}" />
+            <marker date="1582987870926" expanded="true" signature="10118:10395" ph="{...}" />
+            <marker date="1582987870926" expanded="true" signature="10181:10385" ph="{...}" />
+            <marker date="1582987870926" expanded="true" signature="10475:10642" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Vps.Chaos/Helpers/ChaosHelper.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="58" selection-start-line="7" selection-start-column="58" selection-end-line="7" selection-end-column="58" />
+          <folding>
+            <element signature="e#0#47#0" expanded="true" />
+            <marker date="1582987870956" expanded="true" signature="114:327" ph="{...}" />
+            <marker date="1582987870956" expanded="true" signature="251:321" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Vps.ChaosMonkeyMonitor/Scripts/chaosMonitor.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1350">
+          <caret line="90" column="9" selection-start-line="90" selection-start-column="9" selection-end-line="90" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Vps.Chaos/Controllers/ChaosMonkeyController.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="18" selection-start-line="18" selection-end-line="18" />
+          <folding>
+            <element signature="e#0#118#0" expanded="true" />
+            <marker date="1582987870959" expanded="true" signature="151:2557" ph="{...}" />
+            <marker date="1582987870959" expanded="true" signature="208:2555" ph="{...}" />
+            <marker date="1582987870959" expanded="true" signature="442:554" ph="{...}" />
+            <marker date="1582987870959" expanded="true" signature="701:816" ph="{...}" />
+            <marker date="1582987870959" expanded="true" signature="938:1035" ph="{...}" />
+            <marker date="1582987870959" expanded="true" signature="1114:1207" ph="{...}" />
+            <marker date="1582987870959" expanded="true" signature="1298:1365" ph="{...}" />
+            <marker date="1582987870959" expanded="true" signature="1482:1591" ph="{...}" />
+            <marker date="1582987870959" expanded="true" signature="1709:1820" ph="{...}" />
+            <marker date="1582987870959" expanded="true" signature="1934:2041" ph="{...}" />
+            <marker date="1582987870959" expanded="true" signature="2156:2264" ph="{...}" />
+            <marker date="1582987870959" expanded="true" signature="2335:2430" ph="{...}" />
+            <marker date="1582987870959" expanded="true" signature="2496:2549" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>
